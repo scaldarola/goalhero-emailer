@@ -97,13 +97,11 @@ func sendWelcomeEmail(email, language string) error {
 	var subject string
 	var htmlContent string
 
-	fmt.Printf("Sending welcome email to %s in language %s\n", email, language)
-
 	if language == "es" {
-		subject = "🎉⚽ ¡Bienvenido a GoalHero Beta!"
+		subject = "🎉⚽ ¡Bienvenido a GoalHero!"
 		htmlContent = getWelcomeEmailHTMLSpanish()
 	} else {
-		subject = "🎉⚽ Welcome to GoalHero Beta!"
+		subject = "🎉⚽ Welcome to GoalHero!"
 		htmlContent = getWelcomeEmailHTML()
 	}
 
@@ -261,26 +259,52 @@ func getWelcomeEmailHTML() string {
         
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            background: linear-gradient(135deg, #00C851 0%, #007E33 100%);
             color: #ffffff;
             text-decoration: none;
-            padding: 18px 40px;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 19px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 30px rgba(0, 200, 81, 0.4);
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
         }
         
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 200, 81, 0.6);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .cta-button:hover:before {
+            left: 100%;
+        }
+        
+        .cta-button:active {
+            transform: translateY(-2px) scale(1.02);
+            transition: all 0.1s ease;
         }
         
         .social-section {
             background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
             border-radius: 16px;
-            padding: 30px;
+            padding: 35px;
             text-align: center;
             margin: 40px 0;
             border: 1px solid #e0e0e0;
@@ -289,34 +313,78 @@ func getWelcomeEmailHTML() string {
         .social-section h3 {
             font-size: 22px;
             color: #1a1a1a;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-weight: 600;
         }
         
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            align-items: center;
+            gap: 20px;
             flex-wrap: wrap;
         }
         
         .social-link {
-            display: inline-block;
-            color: #4CAF50;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             text-decoration: none;
-            font-weight: 500;
-            padding: 12px 20px;
-            border: 2px solid #4CAF50;
-            border-radius: 30px;
-            transition: all 0.3s ease;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             font-size: 16px;
+            min-width: 160px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-link.website {
+            background: linear-gradient(135deg, #00C851 0%, #007E33 100%);
+            color: #ffffff;
+            box-shadow: 0 6px 20px rgba(0, 200, 81, 0.3);
+            border: 2px solid transparent;
+        }
+        
+        .social-link.instagram {
+            background: linear-gradient(135deg, #E4405F 0%, #C13584 50%, #833AB4 100%);
+            color: #ffffff;
+            box-shadow: 0 6px 20px rgba(228, 64, 95, 0.3);
+            border: 2px solid transparent;
+        }
+        
+        .social-link:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
         }
         
         .social-link:hover {
-            background-color: #4CAF50;
-            color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-link.website:hover {
+            box-shadow: 0 12px 35px rgba(0, 200, 81, 0.4);
+        }
+        
+        .social-link.instagram:hover {
+            box-shadow: 0 12px 35px rgba(228, 64, 95, 0.4);
+        }
+        
+        .social-link:hover:before {
+            left: 100%;
+        }
+        
+        .social-link:active {
+            transform: translateY(-1px) scale(1.02);
+            transition: all 0.1s ease;
         }
         
         .footer {
@@ -421,8 +489,8 @@ func getWelcomeEmailHTML() string {
             <div class="social-section">
                 <h3>Stay Connected</h3>
                 <div class="social-links">
-                    <a href="https://www.goalhero.eu" class="social-link">🌐 Website</a>
-                    <a href="https://instagram.com/goalhero.app" class="social-link">📸 Instagram</a>
+                    <a href="https://www.goalhero.eu" class="social-link website">🌐 Website</a>
+                    <a href="https://instagram.com/goalhero.app" class="social-link instagram">� Instagram</a>
                 </div>
             </div>
             
@@ -585,26 +653,52 @@ func getWelcomeEmailHTMLSpanish() string {
         
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            background: linear-gradient(135deg, #00C851 0%, #007E33 100%);
             color: #ffffff;
             text-decoration: none;
-            padding: 18px 40px;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 19px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 30px rgba(0, 200, 81, 0.4);
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
         }
         
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 200, 81, 0.6);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .cta-button:hover:before {
+            left: 100%;
+        }
+        
+        .cta-button:active {
+            transform: translateY(-2px) scale(1.02);
+            transition: all 0.1s ease;
         }
         
         .social-section {
             background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
             border-radius: 16px;
-            padding: 30px;
+            padding: 35px;
             text-align: center;
             margin: 40px 0;
             border: 1px solid #e0e0e0;
@@ -613,34 +707,78 @@ func getWelcomeEmailHTMLSpanish() string {
         .social-section h3 {
             font-size: 22px;
             color: #1a1a1a;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-weight: 600;
         }
         
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            align-items: center;
+            gap: 20px;
             flex-wrap: wrap;
         }
         
         .social-link {
-            display: inline-block;
-            color: #4CAF50;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             text-decoration: none;
-            font-weight: 500;
-            padding: 12px 20px;
-            border: 2px solid #4CAF50;
-            border-radius: 30px;
-            transition: all 0.3s ease;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             font-size: 16px;
+            min-width: 160px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-link.website {
+            background: linear-gradient(135deg, #00C851 0%, #007E33 100%);
+            color: #ffffff;
+            box-shadow: 0 6px 20px rgba(0, 200, 81, 0.3);
+            border: 2px solid transparent;
+        }
+        
+        .social-link.instagram {
+            background: linear-gradient(135deg, #E4405F 0%, #C13584 50%, #833AB4 100%);
+            color: #ffffff;
+            box-shadow: 0 6px 20px rgba(228, 64, 95, 0.3);
+            border: 2px solid transparent;
+        }
+        
+        .social-link:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
         }
         
         .social-link:hover {
-            background-color: #4CAF50;
-            color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-link.website:hover {
+            box-shadow: 0 12px 35px rgba(0, 200, 81, 0.4);
+        }
+        
+        .social-link.instagram:hover {
+            box-shadow: 0 12px 35px rgba(228, 64, 95, 0.4);
+        }
+        
+        .social-link:hover:before {
+            left: 100%;
+        }
+        
+        .social-link:active {
+            transform: translateY(-1px) scale(1.02);
+            transition: all 0.1s ease;
         }
         
         .footer {
@@ -745,8 +883,8 @@ func getWelcomeEmailHTMLSpanish() string {
             <div class="social-section">
                 <h3>Mantente Conectado</h3>
                 <div class="social-links">
-                    <a href="https://www.goalhero.eu" class="social-link">🌐 Sitio Web</a>
-                    <a href="https://instagram.com/goalhero.app" class="social-link">📸 Instagram</a>
+                    <a href="https://www.goalhero.eu" class="social-link website">🌐 Sitio Web</a>
+                    <a href="https://instagram.com/goalhero.app" class="social-link instagram">� Instagram</a>
                 </div>
             </div>
             
