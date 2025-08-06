@@ -397,10 +397,7 @@ func getWelcomeEmailHTML() string {
                 <h3>Stay Connected</h3>
                 <div class="social-links">
                     <a href="https://www.goalhero.eu" class="social-link">🌐 Website</a>
-                    <a href="https://twitter.com/goalhero" class="social-link">🐦 Twitter</a>
-                    <a href="https://linkedin.com/company/goalhero" class="social-link">💼 LinkedIn</a>
-                    <a href="https://instagram.com/goalheroapp" class="social-link">📸 Instagram</a>
-                    <a href="https://facebook.com/goalheroapp" class="social-link">👥 Facebook</a>
+                    <a href="https://instagram.com/goalhero.app" class="social-link">📸 Instagram</a>
                 </div>
             </div>
             
