@@ -97,6 +97,8 @@ func sendWelcomeEmail(email, language string) error {
 	var subject string
 	var htmlContent string
 
+	fmt.Printf("Sending welcome email to %s in language %s\n", email, language)
+
 	if language == "es" {
 		subject = "🎉⚽ ¡Bienvenido a GoalHero Beta!"
 		htmlContent = getWelcomeEmailHTMLSpanish()
