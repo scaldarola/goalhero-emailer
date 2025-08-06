@@ -148,7 +148,7 @@ jobs:
       with:
         status: success
         channel: '#deployments'
-        text: '✅ GoalHero API: Tests passed and build successful!'
+        text: '✅ GoalHero Emailer API: Tests passed and build successful!'
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
@@ -158,6 +158,6 @@ jobs:
       with:
         status: failure
         channel: '#deployments'
-        text: '❌ GoalHero API: Tests failed or build failed!'
+        text: '❌ GoalHero Emailer API: Tests failed or build failed!'
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
