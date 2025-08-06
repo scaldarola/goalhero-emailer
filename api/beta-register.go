@@ -79,7 +79,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 func sendWelcomeEmail(email string) error {
 	from := mail.NewEmail("GoalHero Team", "info@goalhero.eu")
 	to := mail.NewEmail("", email)
-	subject := "🎉 Welcome to GoalHero Beta!"
+	subject := "🎉⚽ Welcome to GoalHero Beta!"
 
 	htmlContent := getWelcomeEmailHTML()
 
