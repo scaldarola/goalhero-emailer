@@ -82,16 +82,18 @@ func sendWelcomeEmail(email string) error {
 	subject := "🎉 Welcome to GoalHero Beta!"
 
 	htmlContent := getWelcomeEmailHTML()
-	
+
 	message := mail.NewSingleEmail(from, subject, to, "", htmlContent)
 
 	client := sendgrid.NewSendClient(os.Getenv("SENDGRID_API_KEY"))
 	response, err := client.Send(message)
 	if err != nil {
+		fmt.Printf("Error sending email: %v\n", err)
 		return fmt.Errorf("error sending email: %v", err)
 	}
 
 	if response.StatusCode >= 400 {
+		fmt.Printf("Error sending email: %v\n", err)
 		return fmt.Errorf("sendgrid error: status code %d", response.StatusCode)
 	}
 
