@@ -134,18 +134,21 @@ func getWelcomeEmailHTML() string {
         .logo-banner {
             width: 100%;
             height: 200px;
-            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            background: #000000;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
+            padding: 20px;
         }
         
         .logo-banner img {
             max-width: 300px;
-            max-height: 120px;
+            max-height: 160px;
             width: auto;
             height: auto;
+            display: block;
+            margin: 0 auto;
         }
         
         .header {
