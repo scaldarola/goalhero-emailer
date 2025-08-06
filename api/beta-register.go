@@ -364,7 +364,7 @@ func getWelcomeEmailHTML() string {
 <body>
     <div class="container">
         <div class="logo-banner">
-            <img src="assets/logo.png" alt="GoalHero Logo" />
+            <img src="https://www.goalhero.eu/icon.png" alt="GoalHero Logo" />
         </div>
         
         <div class="header">
