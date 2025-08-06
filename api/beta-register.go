@@ -134,7 +134,7 @@ func getWelcomeEmailHTML() string {
         .logo-banner {
             width: 100%;
             height: 200px;
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -156,14 +156,14 @@ func getWelcomeEmailHTML() string {
         }
         
         .header h1 {
-            color: #1f2937;
+            color: #1a1a1a;
             font-size: 32px;
             font-weight: 700;
             margin-bottom: 10px;
         }
         
         .header p {
-            color: #6b7280;
+            color: #4a4a4a;
             font-size: 18px;
             font-weight: 500;
         }
@@ -179,30 +179,30 @@ func getWelcomeEmailHTML() string {
         
         .welcome-message h2 {
             font-size: 28px;
-            color: #1f2937;
+            color: #1a1a1a;
             margin-bottom: 20px;
             font-weight: 600;
         }
         
         .welcome-message p {
             font-size: 18px;
-            color: #4b5563;
+            color: #4a4a4a;
             line-height: 1.7;
             max-width: 500px;
             margin: 0 auto;
         }
         
         .features {
-            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
             border-radius: 16px;
             padding: 30px;
             margin: 40px 0;
-            border: 1px solid #d1d5db;
+            border: 1px solid #e0e0e0;
         }
         
         .features h3 {
             font-size: 22px;
-            color: #1f2937;
+            color: #1a1a1a;
             margin-bottom: 25px;
             text-align: center;
             font-weight: 600;
@@ -214,7 +214,7 @@ func getWelcomeEmailHTML() string {
         
         .feature-list li {
             padding: 12px 0;
-            color: #374151;
+            color: #2a2a2a;
             display: flex;
             align-items: center;
             font-size: 16px;
@@ -222,7 +222,7 @@ func getWelcomeEmailHTML() string {
         }
         
         .feature-list li:before {
-            content: "⚡";
+            content: "🥅";
             margin-right: 15px;
             font-size: 18px;
         }
@@ -234,7 +234,7 @@ func getWelcomeEmailHTML() string {
         
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
             color: #ffffff;
             text-decoration: none;
             padding: 18px 40px;
@@ -242,26 +242,26 @@ func getWelcomeEmailHTML() string {
             font-weight: 600;
             font-size: 18px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
         }
         
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
         }
         
         .social-section {
-            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+            background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
             border-radius: 16px;
             padding: 30px;
             text-align: center;
             margin: 40px 0;
-            border: 1px solid #e5e7eb;
+            border: 1px solid #e0e0e0;
         }
         
         .social-section h3 {
             font-size: 22px;
-            color: #1f2937;
+            color: #1a1a1a;
             margin-bottom: 25px;
             font-weight: 600;
         }
@@ -275,26 +275,26 @@ func getWelcomeEmailHTML() string {
         
         .social-link {
             display: inline-block;
-            color: #3b82f6;
+            color: #4CAF50;
             text-decoration: none;
             font-weight: 500;
             padding: 12px 20px;
-            border: 2px solid #3b82f6;
+            border: 2px solid #4CAF50;
             border-radius: 30px;
             transition: all 0.3s ease;
             font-size: 16px;
         }
         
         .social-link:hover {
-            background-color: #3b82f6;
+            background-color: #4CAF50;
             color: #ffffff;
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
         }
         
         .footer {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            color: #d1d5db;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            color: #cccccc;
             padding: 40px 30px;
             text-align: center;
         }
@@ -305,13 +305,13 @@ func getWelcomeEmailHTML() string {
         }
         
         .footer a {
-            color: #60a5fa;
+            color: #4CAF50;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         
         .footer a:hover {
-            color: #93c5fd;
+            color: #66BB6A;
         }
         
         @media (max-width: 600px) {
@@ -364,28 +364,28 @@ func getWelcomeEmailHTML() string {
 <body>
     <div class="container">
         <div class="logo-banner">
-            <img src="https://goalhero.eu/assets/logo.png" alt="GoalHero Logo" />
+            <img src="assets/logo.png" alt="GoalHero Logo" />
         </div>
         
         <div class="header">
             <h1>Welcome to GoalHero!</h1>
-            <p>You're now part of our exclusive beta community</p>
+            <p>Never cancel another match - find goalkeepers instantly</p>
         </div>
         
         <div class="content">
             <div class="welcome-message">
-                <h2>🎉 Congratulations!</h2>
-                <p>Thank you for joining the GoalHero beta program! You're among the first to experience our revolutionary goal-tracking platform that transforms how you achieve your dreams.</p>
+                <h2>⚽ Welcome to the Beta!</h2>
+                <p>Thank you for joining GoalHero! You're among the first to experience our revolutionary goalkeeper marketplace that ensures your team never forfeits another match due to missing keepers.</p>
             </div>
             
             <div class="features">
                 <h3>What's Coming Your Way</h3>
                 <ul class="feature-list">
-                    <li>Intelligent goal tracking with AI-powered insights</li>
-                    <li>Progress visualization and milestone celebrations</li>
-                    <li>Community challenges and accountability partners</li>
-                    <li>Personalized coaching and motivation</li>
-                    <li>Advanced analytics and performance metrics</li>
+                    <li>Post games and receive competitive bids from goalkeepers</li>
+                    <li>Browse verified goalkeeper profiles with ratings & reviews</li>
+                    <li>Secure payment system with guaranteed show-up protection</li>
+                    <li>24/7 emergency backup keeper network</li>
+                    <li>Match analytics and keeper performance tracking</li>
                 </ul>
             </div>
             
@@ -407,7 +407,7 @@ func getWelcomeEmailHTML() string {
             <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid #e5e7eb;">
                 <p style="color: #6b7280; font-size: 16px;">
                     Have questions? We're here to help! Reply to this email or contact us at 
-                    <a href="mailto:info@goalhero.eu" style="color: #3b82f6;">info@goalhero.eu</a>
+                    <a href="mailto:info@goalhero.eu" style="color: #4CAF50;">info@goalhero.eu</a>
                 </p>
             </div>
         </div>
