@@ -324,6 +324,7 @@ func getWelcomeEmailHTML() string {
             gap: 15px;
             flex-wrap: wrap;
             text-align: center;
+            width: 100%;
         }
         
         .social-link {
@@ -344,6 +345,7 @@ func getWelcomeEmailHTML() string {
             box-sizing: border-box;
             text-align: center;
             line-height: 1.2;
+            margin: 0 auto;
         }
         
         .social-link.website {
@@ -454,11 +456,13 @@ func getWelcomeEmailHTML() string {
                 flex-direction: column;
                 align-items: center;
                 gap: 12px;
+                width: 100%;
             }
             
             .social-link {
                 width: 200px;
                 height: 50px;
+                margin: 0 auto;
             }
         }
     </style>
@@ -722,6 +726,7 @@ func getWelcomeEmailHTMLSpanish() string {
             gap: 15px;
             flex-wrap: wrap;
             text-align: center;
+            width: 100%;
         }
         
         .social-link {
@@ -742,6 +747,7 @@ func getWelcomeEmailHTMLSpanish() string {
             box-sizing: border-box;
             text-align: center;
             line-height: 1.2;
+            margin: 0 auto;
         }
         
         .social-link.website {
@@ -852,11 +858,13 @@ func getWelcomeEmailHTMLSpanish() string {
                 flex-direction: column;
                 align-items: center;
                 gap: 12px;
+                width: 100%;
             }
             
             .social-link {
                 width: 200px;
                 height: 50px;
+                margin: 0 auto;
             }
         }
     </style>
