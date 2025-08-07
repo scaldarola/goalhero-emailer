@@ -321,8 +321,9 @@ func getWelcomeEmailHTML() string {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
+            text-align: center;
         }
         
         .social-link {
@@ -330,16 +331,19 @@ func getWelcomeEmailHTML() string {
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-weight: 600;
-            padding: 14px 28px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            padding: 15px 25px;
             border-radius: 50px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-size: 16px;
-            width: 160px;
-            height: 48px;
+            font-size: 15px;
+            width: 155px;
+            height: 50px;
             position: relative;
             overflow: hidden;
             box-sizing: border-box;
+            text-align: center;
+            line-height: 1.2;
         }
         
         .social-link.website {
@@ -449,11 +453,12 @@ func getWelcomeEmailHTML() string {
             .social-links {
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
+                gap: 12px;
             }
             
             .social-link {
                 width: 200px;
+                height: 50px;
             }
         }
     </style>
@@ -714,8 +719,9 @@ func getWelcomeEmailHTMLSpanish() string {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
+            text-align: center;
         }
         
         .social-link {
@@ -723,16 +729,19 @@ func getWelcomeEmailHTMLSpanish() string {
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-weight: 600;
-            padding: 14px 28px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            padding: 15px 25px;
             border-radius: 50px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-size: 16px;
-            width: 160px;
-            height: 48px;
+            font-size: 15px;
+            width: 155px;
+            height: 50px;
             position: relative;
             overflow: hidden;
             box-sizing: border-box;
+            text-align: center;
+            line-height: 1.2;
         }
         
         .social-link.website {
@@ -842,11 +851,12 @@ func getWelcomeEmailHTMLSpanish() string {
             .social-links {
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
+                gap: 12px;
             }
             
             .social-link {
                 width: 200px;
+                height: 50px;
             }
         }
     </style>
