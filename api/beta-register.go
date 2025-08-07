@@ -335,9 +335,11 @@ func getWelcomeEmailHTML() string {
             border-radius: 50px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             font-size: 16px;
-            min-width: 160px;
+            width: 160px;
+            height: 48px;
             position: relative;
             overflow: hidden;
+            box-sizing: border-box;
         }
         
         .social-link.website {
@@ -486,18 +488,8 @@ func getWelcomeEmailHTML() string {
             <div class="social-section">
                 <h3>Stay Connected</h3>
                 <div class="social-links">
-                    <a href="https://www.goalhero.eu" class="social-link website">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
-                        </svg>
-                        Website
-                    </a>
-                    <a href="https://instagram.com/goalhero.app" class="social-link instagram">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.65-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                        </svg>
-                        Instagram
-                    </a>
+                    <a href="https://www.goalhero.eu" class="social-link website">🌐 Website</a>
+                    <a href="https://instagram.com/goalhero.app" class="social-link instagram">📷 Instagram</a>
                 </div>
             </div>
             
@@ -514,7 +506,7 @@ func getWelcomeEmailHTML() string {
             <p>Making dreams achievable, one goal at a time.</p>
             <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
                 © 2025 GoalHero. All rights reserved.<br>
-                <a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                <a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a>
             </p>
         </div>
     </div>
@@ -736,9 +728,11 @@ func getWelcomeEmailHTMLSpanish() string {
             border-radius: 50px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             font-size: 16px;
-            min-width: 160px;
+            width: 160px;
+            height: 48px;
             position: relative;
             overflow: hidden;
+            box-sizing: border-box;
         }
         
         .social-link.website {
@@ -887,18 +881,8 @@ func getWelcomeEmailHTMLSpanish() string {
             <div class="social-section">
                 <h3>Mantente Conectado</h3>
                 <div class="social-links">
-                    <a href="https://www.goalhero.eu" class="social-link website">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
-                        </svg>
-                        Sitio Web
-                    </a>
-                    <a href="https://instagram.com/goalhero.app" class="social-link instagram">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.65-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                        </svg>
-                        Instagram
-                    </a>
+                    <a href="https://www.goalhero.eu" class="social-link website">🌐 Sitio Web</a>
+                    <a href="https://instagram.com/goalhero.app" class="social-link instagram">📷 Instagram</a>
                 </div>
             </div>
             
@@ -915,7 +899,7 @@ func getWelcomeEmailHTMLSpanish() string {
             <p>Haciendo los sueños alcanzables, un gol a la vez.</p>
             <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
                 © 2025 GoalHero. Todos los derechos reservados.<br>
-                <a href="#">Darse de baja</a> | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a>
+                <a href="#">Darse de baja</a> | <a href="#">Política de Privacidad</a>
             </p>
         </div>
     </div>
