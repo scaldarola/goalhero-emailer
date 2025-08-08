@@ -240,16 +240,19 @@ func getWelcomeEmailHTML() string {
         .feature-list li {
             padding: 12px 0;
             color: #2a2a2a;
-            display: flex;
-            align-items: center;
             font-size: 16px;
             font-weight: 500;
+            position: relative;
+            padding-left: 60px;
         }
         
-        .feature-list li:before {
-            content: "🥅";
-            margin-right: 15px;
-            font-size: 18px;
+        .feature-list li img {
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
         }
         
         .cta-section {
@@ -642,16 +645,19 @@ func getWelcomeEmailHTMLSpanish() string {
         .feature-list li {
             padding: 12px 0;
             color: #2a2a2a;
-            display: flex;
-            align-items: center;
             font-size: 16px;
             font-weight: 500;
+            position: relative;
+            padding-left: 60px;
         }
         
-        .feature-list li:before {
-            content: "🥅";
-            margin-right: 15px;
-            font-size: 18px;
+        .feature-list li img {
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
         }
         
         .cta-section {
